@@ -1,2 +1,2 @@
-# WebFundamentals
-Web fundamental Assignments
+# python stack Coding Dojo
+Python Assignments
