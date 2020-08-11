@@ -1,0 +1,13 @@
+.container {
+	display: flex;
+	justify-content: space-around;
+	margin: 0px auto;
+	border: 2px solid #000000;
+	background-color: #ffffff;
+}
+.box {
+	background-color: blue;
+}
+h1 {
+	text-align: center;
+}

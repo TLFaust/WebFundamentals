@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+
+		<style>
+			.container {
+				height: fit-content;
+				width: 1000px;
+				display: flex;
+				justify-content: space-around;
+				flex-wrap: wrap;
+				margin: 90px auto;
+				/* border: 2px solid #000000; */
+				background-color: #ffffff;
+			}
+			.box {
+				margin-top: 50px;
+				display: flex;
+				box-sizing: border-box;
+				width: 300px;
+				height: 300px;
+				background-color: {{pickOne}};
+				color: #ffffff;
+				text-align: center;
+				align-items: center;
+				justify-content: center;
+				border: 2px solid #000000;
+				border-radius: 10px;
+			}
+			h1 {
+				margin-top: 50px;
+				text-align: center;
+			}
+			h3 {
+				/* margin-top: 75px; */
+				text-align: center;
+			}
+		</style>
+		<title>{% block title %}{% endblock %}</title>
+	</head>
+	<body>
+		<h1>{% block header %}{% endblock %}</h1>
+		<div class="container">
+			{% block content %}{% endblock %}
+		</div>
+	</body>
+</html>

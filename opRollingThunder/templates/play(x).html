@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block title %} Beautiful Boxes {% endblock %} {%
+block header %} Terrell's Boxes {% endblock %} {% block content %}
+<!-- <div class="container"> -->
+<style>
+	.box {
+		background-color: blue;
+	}
+</style>
+{% if boxNum > 12 %}
+
+<h1>Too many boxes</h1>
+{% else %} {% for i in range(boxNum): %}
+<div class="box">
+	<h3>
+		{% block second %} Beautiful Boxes {% endblock %}
+	</h3>
+</div>
+{% endfor %} {% endif %}
+<!-- </div> -->
+{% endblock %}

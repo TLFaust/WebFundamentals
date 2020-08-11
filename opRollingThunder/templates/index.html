@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block title %} Home Page {% endblock %} {% block
+header %} Terrell's Boxes {% endblock %} {% block content %}
+<style>
+	.box {
+		background-color: blue;
+	}
+</style>
+<!-- <div class="container"> -->
+{% for i in range(3) %}
+<div class="box">
+	<h3>
+		{% block second %} Beautiful Boxes {% endblock %}
+	</h3>
+</div>
+{% endfor %}
+<!-- </div> -->
+{% endblock %}
